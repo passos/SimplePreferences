@@ -10,7 +10,6 @@ import android.widget.EditText;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import com.ioenv.preferences.DefaultPreferenceStorage;
 import com.ioenv.preferences.Preferences;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        Preferences.init(getApplicationContext(), DefaultPreferenceStorage.class, "demo");
+        Preferences.init(getApplicationContext(), "demo");
     }
 
     @Override
